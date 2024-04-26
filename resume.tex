@@ -1,44 +1,132 @@
-\documentclass{resume}
+% Use https://overleaf.com to edit this file
+\documentclass[11pt]{article} % Font size 10pt/11pt/12pt
 
+% Font
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault,light,semibold,lf]{FiraSans}
+
+% Margin
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    margin=1.5cm
+}
+
+% Commands
+\newcommand{\uthree}[4]{
+    {\large
+        {\bfseries #1 $|$ \textit{#2} \hfill #3} \par
+    }
+    \begin{itemize}
+        #4
+    \end{itemize}
+    \par\addvspace{2.5ex}%
+}
+
+\newcommand{\ufour}[5]{
+    {\large \bfseries
+        #1 \hfill #2 \par
+        \textit{#3 \hfill #4} \par
+    }
+    \begin{itemize}
+        #5
+    \end{itemize}
+    \par\addvspace{2.5ex}%
+}
+
+
+% List
+\usepackage{enumitem}
+\setlist{nosep}
+\setlist[itemize]{
+    left=0pt .. 1.5em,
+    }
+
+% Section
+\usepackage{soul}
+\usepackage[explicit]{titlesec}
+\titleformat{\section}
+{\large\bfseries\uppercase}
+{}{}
+{\hrulefill\ \so{#1} \hrulefill}
+
+% Footer
+\usepackage[page]{totalcount}
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+
+\AtBeginDocument{
+    \ifthenelse{\totalpages>1}
+    {\pagestyle{fancy}}
+    {\pagestyle{empty}} % no page number if only one page
+}
+
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\cfoot{\color{gray}Resume -- Page \thepage{} of \totalpages}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=darkgray
+}
+
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+
+\pdfgentounicode=1
+
+\usepackage{multicol}
+\usepackage{fontawesome5}
+
+% Resume starts here
 \begin{document}
-\pagenumbering{gobble} % suppress displaying page number
 
-\name{Sankalp Tharu}
+\begin{multicols}{3}
+  \begin{flushleft}
+    \color{gray}{\faGithub} \href{https://github.com/S4NKALP}{S4NKALP} \\
+    \color{gray}{\faEnvelope} \href{mailto:sankalptharu50028@gmail.com}{sankalptharu50028@gmail.com} \\
+  \end{flushleft}
 
-\basicInfo{
-  \email{sankalptharu50028@gmail.com} \textperiodcentered\
-  \linkedin[Z4CKX]{https://www.linkedin.com/in/S4NKALP} \textperiodcentered\
-  \github[S4NKALP]{https://github.com/S4NKALP}}
+\columnbreak
+
+  \begin{center}
+      {\huge\bfseries SANKALP THARU} \par
+      Learner | Maker | Explorer \par
+  \end{center}
+
+\columnbreak
+
+\end{multicols}
 
 \section{Summary}
 %===========%
-
 I am a quick learner and a self-starter, always looking for new challenges and opportunities to learn.
 I strongly believe in the power of open-source and community, and I love to give back by sharing my knowledge.
 I enjoy working from the command line, building tools and automating things.
 
-\section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Tribhuwan Secondary School (TSS)}, Kohalpur, Nepal}{2022 -- Present}
-\textit{Diploma student} in Computer Engineering (DCOM), expected  2024/25
-\datedsubsection{\textbf{Dhruba Ma.Vi}, Bardiya, Nepal}{2019 -- 2022}
-\textit{Student} of veterinary
-\datedsubsection{\textbf{Century E.M School}, Dhakeri, Nepali}{2009-2018}
-\textit{Student}
+\section{Experience}
+%==============%
+No Experience till now.
 
-\section{\faUsers\ Experience}
-Till now I have no any Experience
+\section{Education}
+%=============%
+\uthree{Diploma in Computer Engineering}{2022 -- expected 2024/25}{Kohalpur, Nepal}
+\uthree{Veterinary Student}{2019 -- 2022}{Bardiya, Nepal}{
+    \item Dedicated most of my time to self-learning and contributing to open-source.
+}
 
-\section{\faCogs\ Skills}
-\begin{itemize}[parsep=0.5ex]
-  \item Programming C, Java, TypeScript/JavaScript, Java, Python, Bash, Lua
-  \item Platform: Linux, Android
-  \item Development: Web, xxx
-\end{itemize}
-
-\section{\faInfo\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
-  \item GitHub: https://github.com/S4NKALP
-  \item Languages: English, Hindi, Tharu and Nepali - Native speaker
-\end{itemize}
+\section{Skills}
+%=========%
+\begin{description}
+  \item[Programming] C, C++, JAVA, TypeScript/JavaScript, Java, Python, Bash, Lua,
+  % \item[Frameworks] Ruby on Rails, React, Next.js, NodeJS, Spring, Flask, Android, Phoenix
+  % \item[Data] GraphQL, ActiveRecord, SQLAlchemy, Postgres, MySQL
+  % \item[DevOps] GitHub, Circle CI, Azure, AWS, Heroku, Aptible, Docker
+  % \item[Testing] RSpec, JUnit, Jest, Enzyme, PyTest, Cypress, Pact
+  \item[Spoken Languages] English, Hindi, Nepali, Tharu
+\end{description}
 
 \end{document}
+
