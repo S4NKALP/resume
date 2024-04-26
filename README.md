@@ -22,9 +22,5 @@ No Experience till now.
 ## Skills
 
 - **Programming Languages**: C, C++, JAVA, TypeScript/JavaScript, Java, Python, Bash, Lua,
-<!-- - **Frameworks**: Ruby on Rails, React, Next.js, NodeJS, Spring, Flask, Android, Phoenix
-- **Data**: GraphQL, ActiveRecord, SQLAlchemy, Postgres, MySQL
-- **DevOps**: GitHub, Circle CI, Azure, AWS, Heroku, Aptible, Docker
- **Testing**: RSpec, JUnit, Jest, Enzyme, PyTest, Cypress, Pact -->
 - **Spoken Languages**: English, Hindi, Nepali, Tharu,
 
