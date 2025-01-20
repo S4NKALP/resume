@@ -15,12 +15,14 @@ No Experience till now.
 ## Education
 
 ### Diploma in Computer Engineering (2022 – expected 2024/25, Kohalpur, Nepal)
+
 ### Veterinary Student (2019 – 2022, Bardiya, Nepal)
 
 - Dedicated most of my time to self-learning and contributing to open-source.
 
 ## Skills
 
-- **Programming Languages**: C, C++, JAVA, TypeScript/JavaScript, Java, Python, Bash, Lua,
-- **Spoken Languages**: English, Hindi, Nepali, Tharu,
-
+- **Programming**: C, JAVA, TypeScript/JavaScript, Java, Python, Bash, Lua
+- **Data**: MySQL
+- **DevOps**: Github
+- **Spoken Languages**: English, Hindi, Nepali, Tharu
